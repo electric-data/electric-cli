@@ -1,5 +1,6 @@
 ![Status](https://img.shields.io/badge/status-alpha-red.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![CircleCI](https://circleci.com/gh/sparse-data/sparse-cli/tree/main.svg?style=shield&circle-token=67d43361b7c2aa039a0eef39d3617a9f481e54c5)](https://circleci.com/gh/sparse-data/sparse-cli/tree/main)
 
 # Sparse CLI
 
