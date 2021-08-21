@@ -1,7 +1,9 @@
+![Status](https://img.shields.io/badge/status-alpha-red.svg)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
 # Sparse CLI
 
-The Sparse CLI is the command line utility for [Sparse](https://sparsedata.net) web service. It's developed in Python and the code is published under the [MIT License](https://github.com/sparse-data/sparse-cli/blob/master/LICENSE) at [github.com/sparse-data/sparse-cli](https://github.com/sparse-data/sparse-cli).
+The Sparse CLI is the command line utility for the [Sparse](https://sparsedata.net) geo-distributed database hosting service. It's developed in Python and the code is published under the [MIT License](https://github.com/sparse-data/sparse-cli/blob/master/LICENSE) at [github.com/sparse-data/sparse-cli](https://github.com/sparse-data/sparse-cli).
 
 ## Develop
 
