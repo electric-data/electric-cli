@@ -21,6 +21,31 @@ This will install a `sparse` binary in your local Python environment's bin folde
 which sparse
 ```
 
+## Build
+
+If you want to build standalone binaries, you first need to install the extra development requirements:
+
+```sh
+pip install -r dev-requirements.txt
+```
+
+Then you can build a [Pex][] executable using:
+
+```sh
+python setup.py bdist_pex --bdist-all
+```
+
+This will create a `./dist/sparse` binary which you can copy and run anywhere
+on your system.
+
+Alternatively, you can build a standalone binary with an embedded Python interpretor using [PyOxidizer]():
+
+```sh
+pyoxidizer run
+```
+
+This will create a binary at `./build/:target/debug/install/sparse` that you can run on any machine with the same architecture and OS as your build machine.
+
 ## Usage
 
 Run the `sparse` command without arguments or with the `--help` flag for usage information:

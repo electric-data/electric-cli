@@ -29,6 +29,7 @@ setup(
     include_package_data=True,
     install_requires=[
       'click>=7',
+      'durations>=0.3',
       'requests>=2',
     ],
     python_requires='>=3.5',

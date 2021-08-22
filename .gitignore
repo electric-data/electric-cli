@@ -3,5 +3,7 @@
 .coverage
 *.pyc
 __pycache__
-venv
+build
+dist
 src/*.egg-info
+venv
