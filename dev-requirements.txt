@@ -2,3 +2,5 @@ coverage
 nose
 pex
 pyoxidizer
+pypandoc
+twine
