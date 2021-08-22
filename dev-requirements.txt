@@ -1,6 +1,7 @@
 coverage
 nose
 pex
+pymustache
 pyoxidizer
 pypandoc
 twine

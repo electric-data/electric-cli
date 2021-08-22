@@ -1,0 +1,25 @@
+class SparseCli < Formula
+  include Language::Python::Virtualenv
+
+  desc "Sparse command line utility."
+  homepage "https://sparsedata.net"
+  license "MIT"
+  version "{{ version }}"
+
+  url "{{ url }}"
+  sha256 "{{ hash }}"
+  head "https://github.com/sparse-data/sparse-cli.git"
+
+  {{#resources}}
+  resource "{{ name }}" do
+    url "{{ url }}"
+    sha256 "{{ hash }}"
+  end
+  {{/resources}}
+
+  depends_on "python@3"
+
+  def install
+    virtualenv_install_with_resources(:using => "python@3")
+  end
+end
