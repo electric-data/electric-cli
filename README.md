@@ -29,7 +29,7 @@ If you want to build standalone binaries, you first need to install the extra de
 pip install -r dev-requirements.txt
 ```
 
-Then you can build a [Pex][] executable using:
+Then you can build a [Pex](https://pex.readthedocs.io) executable using:
 
 ```sh
 python setup.py bdist_pex --bdist-all
@@ -38,7 +38,7 @@ python setup.py bdist_pex --bdist-all
 This will create a `./dist/sparse` binary which you can copy and run anywhere
 on your system.
 
-Alternatively, you can build a standalone binary with an embedded Python interpretor using [PyOxidizer]():
+Alternatively, you can build a standalone binary with an embedded Python interpretor using [PyOxidizer](https://pyoxidizer.readthedocs.io):
 
 ```sh
 pyoxidizer run
@@ -65,7 +65,7 @@ Further [documentation is available on the Sparse website](https://sparsedata.ne
 
 ## Test
 
-Running the tests requires `nose` and `coverage`, included in the `maintainer-requirements.txt`.
+Running the tests requires `nose` and `coverage`, included in the `dev-requirements.txt`.
 
 Then, run e.g.:
 
