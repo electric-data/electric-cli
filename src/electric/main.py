@@ -1,6 +1,6 @@
-"""Sparse command line utility.
+"""Electric Data command line interface utility.
 
-  Run `sparse --help` for usage.
+  Run `electric --help` for usage.
 """
 
 import click
@@ -13,12 +13,12 @@ from . import browser
 from . import config
 
 @click.group(cls=click.Group)
-@click.option('--endpoint', metavar='URL', envvar='SPARSE_ENDPOINT',
+@click.option('--endpoint', metavar='URL', envvar='ELECTRIC_DATA_ENDPOINT',
               default=config.default_endpoint(), show_default=True,
               help='Web service API endpoint.')
 @click.pass_context
 def cli(ctx, endpoint):
-    """Sparse - Low latency database hosting."""
+    """Electric Data - Low latency database hosting."""
 
     ctx.obj = NotImplemented
 

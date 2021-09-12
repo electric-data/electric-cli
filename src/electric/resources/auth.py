@@ -1,6 +1,6 @@
 """Sub command to manage authentication.
 
-  Run `sparse auth --help` for usage.
+  Run `electric auth --help` for usage.
 """
 
 import click
@@ -18,9 +18,9 @@ def auth(obj):
 @auth.command()
 @click.pass_obj
 def signup(obj):
-    """Signup for a Sparse account.
+    """Signup for an Electric Data account.
 
-          sparse auth signup
+          electric auth signup
 
       This will open a web page where you can enter your details.
     """
@@ -39,16 +39,16 @@ def signup(obj):
 @click.pass_obj
 @interpolate.docstring(validators.Duration.docs_url)
 def login(obj, email, expires_in):
-    """Login to your Sparse account.
+    """Login to your Electric Data account.
 
-          sparse auth login
+          electric auth login
 
       This will open a web page where you can enter your email and password.
 
       Alternatively, you can provide `--email` and enter your password
       when prompted to login directly from the command line:
 
-          sparse auth login --email YOUR_EMAIL
+          electric auth login --email YOUR_EMAIL
 
       Durations are written in human friendly string format as documented here:
       {0}
@@ -77,7 +77,7 @@ def login_with_password(email, expires_in, password):
 @auth.command()
 @click.pass_obj
 def logout(obj):
-    """Logout of your Sparse account."""
+    """Logout of your Electric Data account."""
 
     raise NotImplementedError
 

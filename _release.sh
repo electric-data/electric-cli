@@ -5,4 +5,4 @@ set -x
 
 version=$(<VERSION)
 
-twine upload dist/sparse-cli-$version.tar.gz
+twine upload dist/electric-cli-$version.tar.gz

@@ -1,4 +1,4 @@
-"""Dynamically generate the contents of the `sparse/tap/sparse-cli` brew formula."""
+"""Dynamically generate the contents of the `electric/tap/electric-cli` brew formula."""
 
 import pymustache
 import subprocess
@@ -25,13 +25,13 @@ def download_url(package_name, version):
 def render():
     context = {
         'version': version,
-        'url': download_url('sparse-cli', version),
-        'hash': sha_hash(f'dist/sparse-cli-{version}.tar.gz'),
+        'url': download_url('electric-cli', version),
+        'hash': sha_hash(f'dist/electric-cli-{version}.tar.gz'),
         'resources': []
     }
 
     for dep in deps:
-        if dep.startswith('sparse') or dep.startswith('-e'):
+        if dep.startswith('electric') or dep.startswith('-e'):
             continue
 
         dep = dep.strip()

@@ -10,7 +10,7 @@ virtualenv --python=/usr/local/bin/python3.9 .relenv
 ./.relenv/bin/python setup.py develop
 ./.relenv/bin/pip freeze > .relenv/deps.txt
 
-python _tap_formula.py > .relenv/sparse-cli.rb
-mv .relenv/sparse-cli.rb ../homebrew-tap/Formula/sparse-cli.rb
+python _tap_formula.py > .relenv/electric-cli.rb
+mv .relenv/electric-cli.rb ../homebrew-tap/Formula/electric-cli.rb
 
 rm -rf .relenv

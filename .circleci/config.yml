@@ -24,4 +24,4 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python setup.py develop
       - run: pip install -r dev-requirements.txt
-      - run: nosetests --with-coverage --cover-package sparse
+      - run: nosetests --with-coverage --cover-package electric

@@ -1,14 +1,14 @@
 """Patch test env."""
 
 from click import testing
-from sparse.main import cli
+from electric.main import cli
 
 class CliRunner(testing.CliRunner):
     def __init__(self, **kwargs):
-        env = {'SPARSE_IS_TESTING': str(True)}
+        env = {'ELECTRIC_DATA_IS_TESTING': str(True)}
 
         for key, value in kwargs.items():
-            env["SPARSE_{0}".format(key.upper())] = str(value)
+            env["ELECTRIC_DATA_{0}".format(key.upper())] = str(value)
 
         super(CliRunner, self).__init__(env=env)
 

@@ -11,12 +11,12 @@ with open('VERSION') as f:
     version = f.read().strip()
 
 setup(
-    name='sparse-cli',
-    description='Sparse command line utility.',
+    name='electric-data-cli',
+    description='Electric Data command line interface utility.',
     long_description=long_description,
-    url='https://github.com/sparse-data/sparse-cli',
-    author='Sparse',
-    author_email='info@sparsedata.net',
+    url='https://github.com/electric-data/electric-cli',
+    author='Electric Data',
+    author_email='info@electricdata.net',
     version=version,
     license='MIT',
     classifiers=[
@@ -36,7 +36,7 @@ setup(
     zip_safe=False,
     entry_points = {
         'console_scripts': [
-            'sparse = sparse.main:cli',
+            'electric = electric.main:cli',
         ],
     },
 )

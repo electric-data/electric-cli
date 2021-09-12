@@ -1,7 +1,7 @@
 
 from .support import runner
 
-from sparse import config
+from electric import config
 
 def test_help():
     result = runner.invoke('--help')

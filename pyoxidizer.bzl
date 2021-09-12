@@ -5,20 +5,20 @@ def make_exe():
     dist = default_python_distribution()
 
     config = dist.make_python_interpreter_config()
-    config.run_command = "from sparse import main; main.cli()"
+    config.run_command = "from electric import main; main.cli()"
 
     policy = dist.make_python_packaging_policy()
     policy.extension_module_filter = "all"
     policy.include_distribution_sources = True
 
     exe = dist.to_python_executable(
-        name="sparse",
+        name="electric",
         config=config,
         packaging_policy=policy
     )
 
     deps = exe.pip_install(["-r", "requirements.txt"])
-    app = exe.read_package_root(path="src", packages=["sparse"])
+    app = exe.read_package_root(path="src", packages=["electric"])
 
     exe.add_python_resources(deps + app)
     return exe
@@ -36,10 +36,10 @@ def make_msi(exe):
     version = open("VERSION").read().trim()
 
     return exe.to_wix_msi_builder(
-        "sparse",
-        "Sparse CLI",
+        "electric",
+        "Electric Data CLI",
         version,
-        "Sparse"
+        "Electric Data"
     )
 
 # Dynamically enable automatic code signing.
