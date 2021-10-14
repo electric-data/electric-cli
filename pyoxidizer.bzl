@@ -37,9 +37,9 @@ def make_msi(exe):
 
     return exe.to_wix_msi_builder(
         "electric",
-        "Electric Data CLI",
+        "Electric DB CLI",
         version,
-        "Electric Data"
+        "Electric DB"
     )
 
 # Dynamically enable automatic code signing.

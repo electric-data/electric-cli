@@ -1,4 +1,4 @@
-"""Dynamically generate the contents of the `electric-data/tap/electric-cli` brew formula."""
+"""Dynamically generate the contents of the `electric-db/tap/electric-cli` brew formula."""
 
 import pymustache
 import subprocess
@@ -25,8 +25,8 @@ def download_url(package_name, version):
 def render():
     context = {
         'version': version,
-        'url': download_url('electric-data-cli', version),
-        'hash': sha_hash(f'dist/electric-data-cli-{version}.tar.gz'),
+        'url': download_url('electric-db-cli', version),
+        'hash': sha_hash(f'dist/electric-db-cli-{version}.tar.gz'),
         'resources': []
     }
 

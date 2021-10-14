@@ -4,14 +4,14 @@
 class ElectricCli < Formula
   include Language::Python::Virtualenv
 
-  desc "Electric Data command line interface utility."
-  homepage "https://electricdata.net"
+  desc "Electric DB command line interface utility."
+  homepage "https://electricdb.net"
   license "MIT"
   version "{{ version }}"
 
   url "{{ url }}"
   sha256 "{{ hash }}"
-  head "https://github.com/electric-data/electric-cli.git"
+  head "https://github.com/electric-db/electric-cli.git"
 
   {{#resources}}
   resource "{{ name }}" do
