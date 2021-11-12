@@ -2,9 +2,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 [![CircleCI](https://circleci.com/gh/electric-db/electric-cli/tree/main.svg?style=shield&circle-token=67d43361b7c2aa039a0eef39d3617a9f481e54c5)](https://circleci.com/gh/electric-db/electric-cli/tree/main)
 
-# Electric DB CLI
+# ElectricDB CLI
 
-The Electric DB CLI is the command line interface utility for the [Electric DB](https://electricdb.net) geo-distributed database hosting service. It's developed in Python and the code is published under the [MIT License](https://github.com/electric-db/electric-cli/blob/master/LICENSE) at [github.com/electric-db/electric-cli](https://github.com/electric-db/electric-cli).
+The ElectricDB CLI is the command line interface utility for the [ElectricDB](https://electricdb.net) geo-distributed database hosting service. It's developed in Python and the code is published under the [MIT License](https://github.com/electric-db/electric-cli/blob/master/LICENSE) at [github.com/electric-db/electric-cli](https://github.com/electric-db/electric-cli).
 
 ## Develop
 
@@ -61,7 +61,7 @@ electric auth --help
 electric auth login --help
 ```
 
-Further [documentation is available on the Electric DB website](https://electricdb.net/docs).
+Further [documentation is available on the ElectricDB website](https://electricdb.net/docs).
 
 ## Test
 

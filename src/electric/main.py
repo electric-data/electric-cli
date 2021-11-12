@@ -1,4 +1,4 @@
-"""Electric DB command line interface utility.
+"""ElectricDB command line interface utility.
 
   Run `electric --help` for usage.
 """
@@ -18,7 +18,7 @@ from . import config
               help='Web service API endpoint.')
 @click.pass_context
 def cli(ctx, endpoint):
-    """Electric DB - Low latency database hosting."""
+    """ElectricDB - Low latency database hosting."""
 
     ctx.obj = NotImplemented
 

@@ -12,10 +12,10 @@ with open('VERSION') as f:
 
 setup(
     name='electric-db-cli',
-    description='Electric DB command line interface utility.',
+    description='ElectricDB command line interface utility.',
     long_description=long_description,
     url='https://github.com/electric-db/electric-cli',
-    author='Electric DB',
+    author='ElectricDB',
     author_email='info@electricdb.net',
     version=version,
     license='MIT',

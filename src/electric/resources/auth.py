@@ -18,7 +18,7 @@ def auth(obj):
 @auth.command()
 @click.pass_obj
 def signup(obj):
-    """Signup for an Electric DB account.
+    """Signup for an ElectricDB account.
 
           electric auth signup
 
@@ -39,7 +39,7 @@ def signup(obj):
 @click.pass_obj
 @interpolate.docstring(validators.Duration.docs_url)
 def login(obj, email, expires_in):
-    """Login to your Electric DB account.
+    """Login to your ElectricDB account.
 
           electric auth login
 
@@ -77,7 +77,7 @@ def login_with_password(email, expires_in, password):
 @auth.command()
 @click.pass_obj
 def logout(obj):
-    """Logout of your Electric DB account."""
+    """Logout of your ElectricDB account."""
 
     raise NotImplementedError
 
