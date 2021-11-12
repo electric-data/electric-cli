@@ -5,4 +5,4 @@ set -x
 
 version=$(<VERSION)
 
-twine upload dist/electric-db-cli-$version.tar.gz
+twine upload dist/electricdb-cli-$version.tar.gz

@@ -11,10 +11,10 @@ with open('VERSION') as f:
     version = f.read().strip()
 
 setup(
-    name='electric-db-cli',
+    name='electricdb-cli',
     description='ElectricDB command line interface utility.',
     long_description=long_description,
-    url='https://github.com/electric-db/electric-cli',
+    url='https://github.com/electricdb/electric-cli',
     author='ElectricDB',
     author_email='info@electricdb.net',
     version=version,
